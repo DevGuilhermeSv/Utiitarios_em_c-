@@ -1,14 +1,17 @@
-
-public class ReadJson{
-public static T ReadJson<T>(string folder, string filename)
+namespace Utilitarios_em_DotNet
 {
-    T objectJson = default(T);
-    if (File.Exists(Path.Combine(folder, filename)))
+    public class ReadJson
     {
-        StreamReader jsonStringReader = new StreamReader(Path.Combine(folder, filename));
-        objectJson = JsonSerializer.Deserialize<T>(jsonStringReader.ReadToEnd());
-        jsonStringReader.Close();
+        public static T ReadJson<T>(string folder, string filename)
+        {
+            T objectJson = default(T);
+            if (File.Exists(Path.Combine(folder, filename)))
+            {
+                StreamReader jsonStringReader = new StreamReader(Path.Combine(folder, filename));
+                objectJson = JsonSerializer.Deserialize<T>(jsonStringReader.ReadToEnd());
+                jsonStringReader.Close();
+            }
+            return objectJson;
+        }
     }
-    return objectJson;
-}
 }

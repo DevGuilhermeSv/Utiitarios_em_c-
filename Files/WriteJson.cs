@@ -1,7 +1,9 @@
+namespace Utilitarios_em_DotNet
+{
 
-
-public class WriteJson{
-     public static bool WriteJson<T>(T objectJson, string folder, string filename)
+    public class WriteJson
+    {
+        public static bool WriteJson<T>(T objectJson, string folder, string filename)
         {
             try
             {
@@ -19,4 +21,5 @@ public class WriteJson{
             }
 
         }
+    }
 }

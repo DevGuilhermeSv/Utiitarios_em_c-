@@ -1,5 +1,7 @@
  
    
+namespace Utilitarios_em_DotNet
+{
    public class ConvertMonthName{
         // receives month number and returns its short name
         public static string ConvertMonthName(int month,string culture)
@@ -14,7 +16,7 @@
                     case 2:
                         return "fev";
 
-                    case 3:
+                    case 3: 
                         return "mar";
 
                     case 4:
@@ -92,4 +94,5 @@
             }
         }
    }
+}
        

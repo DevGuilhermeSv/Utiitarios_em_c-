@@ -1,4 +1,6 @@
-public class ReadCSV{
+namespace Utilitarios_em_DotNet
+{
+ public class ReadCSV{
 public static List<string[]> ReadCSV(string path)
         {
             List<string[]> list = new List<string[]>();
@@ -13,4 +15,5 @@ public static List<string[]> ReadCSV(string path)
             return list;
         
         }
+}
 }

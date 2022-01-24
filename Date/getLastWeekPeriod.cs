@@ -1,6 +1,8 @@
  
- public class getLastWeekPeriod
+namespace Utilitarios_em_DotNet
 {
+ public class getLastWeekPeriod
+    {
      public static List<DateTime> getLastWeekPeriod()
         {
             List<DateTime> period = new List<DateTime>();
@@ -31,4 +33,5 @@
             return period;
         }
 
+}
 }

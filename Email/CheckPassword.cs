@@ -4,8 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
-
-    public static class CheckPassword
+namespace Utilitarios_em_DotNet
+{
+     public static class CheckPassword
     {
         
 
@@ -68,3 +69,4 @@ using System.Text.RegularExpressions;
         }
     }
 
+}

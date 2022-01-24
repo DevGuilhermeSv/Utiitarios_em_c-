@@ -1,4 +1,5 @@
-
+namespace Utilitarios_em_DotNet
+{
 public class emailValidator{
 public static bool emailValidator(string email)
         {
@@ -7,4 +8,5 @@ public static bool emailValidator(string email)
             { return true; }
             return false;
         }
+}
 }

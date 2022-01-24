@@ -1,6 +1,10 @@
+namespace Utilitarios_em_DotNet
+{
+    public class ReadFile
+    {
 
-public class ReadFile{
-    public static List<string> ReadFile(string folder, string filename)
+
+        public static List<string> ReadFile(string folder, string filename)
         {
             List<string> lines = new List<string>();
             if (File.Exists(Path.Combine(folder, filename)))
@@ -15,4 +19,5 @@ public class ReadFile{
             }
             return lines;
         }
+    }
 }

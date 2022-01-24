@@ -1,4 +1,7 @@
- public class getPeriod{
+
+namespace Utilitarios_em_DotNet
+{
+  public class getPeriod{
       public static List<DateTime> getPeriod(int month, int year)
         {
             var day = DateTime.Now.Day;
@@ -72,3 +75,4 @@
         }
 
  }
+}

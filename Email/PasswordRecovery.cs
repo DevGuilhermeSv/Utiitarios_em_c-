@@ -1,4 +1,5 @@
-
+namespace Utilitarios_em_DotNet
+{
  public class PasswordRecovery
 {
     public static string CreateRecoverCode(string emailcode, IWebHostEnvironment environment) {
@@ -35,4 +36,4 @@
         }
 
 }
-        
+}

@@ -1,3 +1,5 @@
+namespace Utilitarios_em_DotNet
+{
 public class GetContentType{
 public static string GetContentType(string path)
 {
@@ -24,4 +26,5 @@ public static Dictionary<string, string> GetMimeTypes()
     };
 }
 
+}
 }
