@@ -1,0 +1,14 @@
+C:\Users\Kratos\Documents\Utilitarios-em-DotNet\obj\Debug\netcoreapp3.1\Utilitarios-em-DotNet.csproj.AssemblyReference.cache
+C:\Users\Kratos\Documents\Utilitarios-em-DotNet\obj\Debug\netcoreapp3.1\Utilitarios-em-DotNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kratos\Documents\Utilitarios-em-DotNet\obj\Debug\netcoreapp3.1\Utilitarios-em-DotNet.AssemblyInfoInputs.cache
+C:\Users\Kratos\Documents\Utilitarios-em-DotNet\obj\Debug\netcoreapp3.1\Utilitarios-em-DotNet.AssemblyInfo.cs
+C:\Users\Kratos\Documents\Utilitarios-em-DotNet\obj\Debug\netcoreapp3.1\Utilitarios-em-DotNet.csproj.CoreCompileInputs.cache
+C:\Users\Kratos\Documents\Utilitarios-em-DotNet\bin\Debug\netcoreapp3.1\Utilitarios-em-DotNet.exe
+C:\Users\Kratos\Documents\Utilitarios-em-DotNet\bin\Debug\netcoreapp3.1\Utilitarios-em-DotNet.deps.json
+C:\Users\Kratos\Documents\Utilitarios-em-DotNet\bin\Debug\netcoreapp3.1\Utilitarios-em-DotNet.runtimeconfig.json
+C:\Users\Kratos\Documents\Utilitarios-em-DotNet\bin\Debug\netcoreapp3.1\Utilitarios-em-DotNet.runtimeconfig.dev.json
+C:\Users\Kratos\Documents\Utilitarios-em-DotNet\bin\Debug\netcoreapp3.1\Utilitarios-em-DotNet.dll
+C:\Users\Kratos\Documents\Utilitarios-em-DotNet\bin\Debug\netcoreapp3.1\Utilitarios-em-DotNet.pdb
+C:\Users\Kratos\Documents\Utilitarios-em-DotNet\obj\Debug\netcoreapp3.1\Utilitarios-em-DotNet.dll
+C:\Users\Kratos\Documents\Utilitarios-em-DotNet\obj\Debug\netcoreapp3.1\Utilitarios-em-DotNet.pdb
+C:\Users\Kratos\Documents\Utilitarios-em-DotNet\obj\Debug\netcoreapp3.1\Utilitarios-em-DotNet.genruntimeconfig.cache

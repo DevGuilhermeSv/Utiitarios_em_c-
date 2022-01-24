@@ -5,5 +5,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Utilitarios_em_DotNet</RootNamespace>
   </PropertyGroup>
+ <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
 
 </Project>
