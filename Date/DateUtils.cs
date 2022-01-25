@@ -3,104 +3,58 @@ using System.Collections.Generic;
 using Utilitarios_em_DotNet.FilesUtils;
 namespace Utilitarios_em_DotNet.DateUtils
 {
+    /**
+    <summary>
+        Fornece classes uteis para  a manipulação de Datas
+    </summary>
+    */
     public class DateUtils
     {
+        /**
+        <summary>
+            Retorna o ultimo dia do Mês
+        </summary>
+        */
         public static int FindLastDayOfMonth(int month)
         {
             // ignorando anos bissextos
             int dayf = month > 7 ? (month % 2 == 0 ? 31 : 30) : (month % 2 != 0 ? 31 : month != 2 ? 30 : 28);
             return dayf;
         }
-        // receives month number and returns its short name
+
+        /// <summary>
+        ///  Devolve o mês em string de acordo com a cultura escolhida
+        /// </summary>
+        /// <param name="month">Mes 0-12.</param>
+        /// <param name="culture">String que representa a cultura atual.</param>
         public static string ConvertMonthName(int month, string culture)
         {
+            if (month > 12 || month < 1)
+                return "";
+            List<string> mes = new List<string>(
+                "Janeiro", "Fevereiro", "Março",
+                "Abril", "Maio", "Junho", "Julho",
+                "Agosto", "Setembro", "Outubro",
+                "Novembro", "Dezembro"
+            );
+            List<string> mesI = new List<string>(
+                "January", "February", "March",
+                "April", "May", "June", "July",
+                "August", "September", "October",
+                "November", "December"
+            );
+
             if (culture != "en-US")
             {
-                switch (month)
-                {
-                    case 1:
-                        return "jan";
-
-                    case 2:
-                        return "fev";
-
-                    case 3:
-                        return "mar";
-
-                    case 4:
-                        return "abr";
-
-                    case 5:
-                        return "mai";
-
-                    case 6:
-                        return "jun";
-
-                    case 7:
-                        return "jul";
-
-                    case 8:
-                        return "ago";
-
-                    case 9:
-                        return "set";
-
-                    case 10:
-                        return "out";
-
-                    case 11:
-                        return "nov";
-
-                    case 12:
-                        return "dez";
-
-                    default:
-                        return "";
-                }
+                return mes(month);
 
             }
-            switch (month)
-            {
-                case 1:
-                    return "January";
-
-                case 2:
-                    return "February";
-
-                case 3:
-                    return "March";
-
-                case 4:
-                    return "April";
-
-                case 5:
-                    return "May";
-
-                case 6:
-                    return "June";
-
-                case 7:
-                    return "July";
-
-                case 8:
-                    return "August";
-
-                case 9:
-                    return "September";
-
-                case 10:
-                    return "October";
-
-                case 11:
-                    return "November";
-
-                case 12:
-                    return "December";
-
-                default:
-                    return "";
-            }
+            return mesI(month);
         }
+
+
+
+
         public static List<DateTime> getLastWeekPeriod()
         {
             List<DateTime> period = new List<DateTime>();
@@ -143,12 +97,16 @@ namespace Utilitarios_em_DotNet.DateUtils
 
             return getPeriod(day, month, year, day, lastmonth, year);
         }
-        /*
-         * receives a month and a year and returns the DateTime List of two days: the first and last from this month/year
+        /**
+        <summary>
+         Recebe o mês e o ano e retorno uma Lista de DateTime de dois dias: o primeiro e o ultimo do mes/ano
+        </summary>
          */
-        public static List<DateTime> getPeriod(int day, int month, int year, int dayff, int monthf, int yearf)
+        public static List<DateTime> getPeriod(DateTime initial, DateTime final)
         {
-
+            var month = initial.Month, monthf = final.Month;
+            var day = initial.Day, dayf = final.Day;
+            var year = initial.Year,yearf = final.Year;
             if (month <= 0 || month > 12 || year > DateTime.Now.Year)
             {
                 return null;
@@ -168,20 +126,20 @@ namespace Utilitarios_em_DotNet.DateUtils
             }
 
             // ending - setting the last day 
-            if (dayff > 28)
+            if (dayf > 28)
             {
                 if (monthf == 2)
                 {
-                    dayff = 28;
+                    dayf = 28;
                 }
                 else
                 {
-                    dayff = FindLastDayOfMonth(monthf);
+                    dayf = FindLastDayOfMonth(monthf);
                 }
             }
 
             DateTime start = new DateTime(year, month, day, 5, 0, 0);
-            DateTime finish = new DateTime(yearf, monthf, dayff, 23, 0, 0);
+            DateTime finish = new DateTime(yearf, monthf, dayf, 23, 0, 0);
 
             //checking if the date was in the future (invalid)
             if (DateTime.Compare(finish, DateTime.Now) >= 0)
