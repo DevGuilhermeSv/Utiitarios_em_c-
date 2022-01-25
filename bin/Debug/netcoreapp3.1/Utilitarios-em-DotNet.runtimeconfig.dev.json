@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\Kratos\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Kratos\\.nuget\\packages"
-    ]
-  }
-}
